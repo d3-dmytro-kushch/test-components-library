@@ -4,4 +4,5 @@
 
 export * from './lib/door3-components-example-lib.service';
 export * from './lib/door3-components-example-lib.component';
+export * from './lib/door3-input/door3-input.component';
 export * from './lib/door3-components-example-lib.module';
