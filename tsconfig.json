@@ -4,6 +4,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "door3-components-example-lib": [
+        "dist/door3-components-example-lib/door3-components-example-lib",
+        "dist/door3-components-example-lib"
+      ]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,

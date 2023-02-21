@@ -1,7 +1,42 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "door3-components-example-lib": {
+      "projectType": "library",
+      "root": "projects/door3-components-example-lib",
+      "sourceRoot": "projects/door3-components-example-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/door3-components-example-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/door3-components-example-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/door3-components-example-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/door3-components-example-lib/src/test.ts",
+            "tsConfig": "projects/door3-components-example-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/door3-components-example-lib/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "door3-components-example-lib"
 }
