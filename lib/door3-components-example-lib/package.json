@@ -1,0 +1,31 @@
+{
+  "name": "door3-components-example-lib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/door3-components-example-lib.mjs",
+  "es2020": "fesm2020/door3-components-example-lib.mjs",
+  "esm2020": "esm2020/door3-components-example-lib.mjs",
+  "fesm2020": "fesm2020/door3-components-example-lib.mjs",
+  "fesm2015": "fesm2015/door3-components-example-lib.mjs",
+  "typings": "door3-components-example-lib.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./door3-components-example-lib.d.ts",
+      "esm2020": "./esm2020/door3-components-example-lib.mjs",
+      "es2020": "./fesm2020/door3-components-example-lib.mjs",
+      "es2015": "./fesm2015/door3-components-example-lib.mjs",
+      "node": "./fesm2015/door3-components-example-lib.mjs",
+      "default": "./fesm2020/door3-components-example-lib.mjs"
+    }
+  },
+  "sideEffects": false
+}
