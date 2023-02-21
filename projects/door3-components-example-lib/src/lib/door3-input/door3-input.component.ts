@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-door3-input',
-  templateUrl: './door3-input.component.html',
-  styleUrls: ['./door3-input.component.scss']
+  selector: 'door3-input',
+  template: '<p class="text-red">door3-input component works!</p>',
+  styles: [':host .text-red { color: red }']
 })
 export class Door3InputComponent implements OnInit {
 
