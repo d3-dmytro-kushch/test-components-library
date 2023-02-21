@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Door3ComponentsExampleLibComponent } from './door3-components-example-lib.component';
-import { Door3InputComponent } from './door3-input/door3-input.component';
+import { Door3InputComponent } from './door3-input.component';
 
 
 
